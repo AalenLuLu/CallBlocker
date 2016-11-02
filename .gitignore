@@ -1,0 +1,10 @@
+.DS_Store
+
+*.xcworkspace
+*.xcodeproj/xcuserdata
+*Tests
+*UITests
+*.entitlements
+
+Pods
+Podfile.lock

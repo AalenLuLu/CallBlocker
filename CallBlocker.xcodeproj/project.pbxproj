@@ -1,0 +1,1436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D6B352A55D332EF915DAA33 /* libPods-CallBlockerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D66A8077A1ACC3C57516252 /* libPods-CallBlockerUITests.a */; };
+		4B7411DA6BF28E0D7AC5EDDF /* libPods-CallBlockerBlock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98834CF2C418DEEB3454DE4D /* libPods-CallBlockerBlock.a */; };
+		54649060DA726CE5DEEA6131 /* libPods-CallBlockerIdentification.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5AE62EB9F7E21C54DE041AC /* libPods-CallBlockerIdentification.a */; };
+		6733CACCB0B86D9635CE495F /* libPods-CallBlockerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 659A7DE647CAA2C40FAC6797 /* libPods-CallBlockerTests.a */; };
+		AB3EFB7C0C706AEBA861D177 /* libPods-CallBlocker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB5D0E13DA0A0CEC61A3511 /* libPods-CallBlocker.a */; };
+		FE0FF0C21DC6DA7A0073D35C /* CBCallDirectoryUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0FF0C11DC6DA7A0073D35C /* CBCallDirectoryUtil.m */; };
+		FE0FF0C91DC6EE910073D35C /* CBSettingSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0FF0C81DC6EE910073D35C /* CBSettingSwitchTableViewCell.m */; };
+		FE0FF0D21DC6FDD90073D35C /* CBEditIdentificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0FF0D11DC6FDD90073D35C /* CBEditIdentificationViewController.m */; };
+		FE24727B1DC2F1230040698A /* CBIdentificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = FE24727A1DC2F1230040698A /* CBIdentificationService.m */; };
+		FE24727F1DC2FC440040698A /* CBIdentification.m in Sources */ = {isa = PBXBuildFile; fileRef = FE24727E1DC2FC440040698A /* CBIdentification.m */; };
+		FE2472831DC328740040698A /* CBIdentificationListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2472821DC328740040698A /* CBIdentificationListTableViewCell.m */; };
+		FE2472931DC359DB0040698A /* CBMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2472921DC359DB0040698A /* CBMediator.m */; };
+		FE2472A61DC35E630040698A /* CallDirectoryHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2472A51DC35E630040698A /* CallDirectoryHandler.m */; };
+		FE2472AA1DC35E630040698A /* CallBlockerIdentification.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FE2472A21DC35E620040698A /* CallBlockerIdentification.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FE2472AE1DC35E840040698A /* CBStoreHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF2A3161DC208E400310913 /* CBStoreHelper.m */; };
+		FE2472AF1DC35E840040698A /* CBIdentification.m in Sources */ = {isa = PBXBuildFile; fileRef = FE24727E1DC2FC440040698A /* CBIdentification.m */; };
+		FE2472B01DC35E840040698A /* CBIdentificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = FE24727A1DC2F1230040698A /* CBIdentificationService.m */; };
+		FE2A0C3E1DC35FF20031D5E6 /* CallDirectoryHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2A0C3D1DC35FF20031D5E6 /* CallDirectoryHandler.m */; };
+		FE2A0C421DC35FF20031D5E6 /* CallBlockerBlock.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FE2A0C3A1DC35FF20031D5E6 /* CallBlockerBlock.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FE650CB41DC871EC00A44C39 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = FE650CB31DC871EC00A44C39 /* UIColor+Hex.m */; };
+		FE650CB51DC89DFD00A44C39 /* CBCallDirectoryUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0FF0C11DC6DA7A0073D35C /* CBCallDirectoryUtil.m */; };
+		FE650CB61DC89E0A00A44C39 /* CBCallDirectoryUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0FF0C11DC6DA7A0073D35C /* CBCallDirectoryUtil.m */; };
+		FE6E6F0A1DC9E2BA0098E67C /* CBBlockService.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6E6F091DC9E2BA0098E67C /* CBBlockService.m */; };
+		FE6E6F111DC9E5700098E67C /* CBBlockNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6E6F101DC9E5700098E67C /* CBBlockNumber.m */; };
+		FE6E6F141DC9EADD0098E67C /* CBAddBlockNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6E6F131DC9EADD0098E67C /* CBAddBlockNumberViewController.m */; };
+		FE6E6F151DC9ED530098E67C /* CBBlockNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6E6F101DC9E5700098E67C /* CBBlockNumber.m */; };
+		FE6E6F161DC9ED530098E67C /* CBBlockService.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6E6F091DC9E2BA0098E67C /* CBBlockService.m */; };
+		FE77F0741DC36192003DC278 /* CBStoreHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF2A3161DC208E400310913 /* CBStoreHelper.m */; };
+		FEA309621DC1D24E005A5CFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA309611DC1D24E005A5CFB /* main.m */; };
+		FEA309651DC1D24E005A5CFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA309641DC1D24E005A5CFB /* AppDelegate.m */; };
+		FEA3096D1DC1D24E005A5CFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEA3096C1DC1D24E005A5CFB /* Assets.xcassets */; };
+		FEA309701DC1D24E005A5CFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEA3096E1DC1D24E005A5CFB /* LaunchScreen.storyboard */; };
+		FEA3097B1DC1D24E005A5CFB /* CallBlockerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA3097A1DC1D24E005A5CFB /* CallBlockerTests.m */; };
+		FEA309861DC1D24E005A5CFB /* CallBlockerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA309851DC1D24E005A5CFB /* CallBlockerUITests.m */; };
+		FEA309C11DC1DDFB005A5CFB /* CBMediator+SplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA309C01DC1DDFB005A5CFB /* CBMediator+SplashView.m */; };
+		FEA309C41DC1EADE005A5CFB /* CBSplashViewControllerTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA309C31DC1EADE005A5CFB /* CBSplashViewControllerTarget.m */; };
+		FEA309C81DC1ED2F005A5CFB /* CBMediator+MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA309C71DC1ED2F005A5CFB /* CBMediator+MainView.m */; };
+		FEA309CB1DC1ED97005A5CFB /* CBMainViewControllerTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA309CA1DC1ED97005A5CFB /* CBMainViewControllerTarget.m */; };
+		FEA309D71DC1EF53005A5CFB /* CBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA309D31DC1EF53005A5CFB /* CBTabBarController.m */; };
+		FEA309D81DC1EF53005A5CFB /* CBSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA309D61DC1EF53005A5CFB /* CBSplashViewController.m */; };
+		FEA309DB1DC1EFD4005A5CFB /* CBNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA309DA1DC1EFD4005A5CFB /* CBNavigationController.m */; };
+		FEA309ED1DC1F208005A5CFB /* CBBlockListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA309EC1DC1F208005A5CFB /* CBBlockListTableViewController.m */; };
+		FEA309F01DC1F21A005A5CFB /* CBContactListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA309EF1DC1F21A005A5CFB /* CBContactListTableViewController.m */; };
+		FEA309F31DC1F226005A5CFB /* CBIdentificationListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA309F21DC1F226005A5CFB /* CBIdentificationListTableViewController.m */; };
+		FEA309F71DC1F26F005A5CFB /* CBSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA309F61DC1F26F005A5CFB /* CBSettingTableViewController.m */; };
+		FEF2A3171DC208E400310913 /* CBStoreHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF2A3161DC208E400310913 /* CBStoreHelper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE2472A81DC35E630040698A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEA309551DC1D24E005A5CFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE2472A11DC35E620040698A;
+			remoteInfo = CallBlockerIdentification;
+		};
+		FE2A0C401DC35FF20031D5E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEA309551DC1D24E005A5CFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE2A0C391DC35FF20031D5E6;
+			remoteInfo = CallBlockerBlock;
+		};
+		FEA309771DC1D24E005A5CFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEA309551DC1D24E005A5CFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEA3095C1DC1D24E005A5CFB;
+			remoteInfo = CallBlocker;
+		};
+		FEA309821DC1D24E005A5CFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEA309551DC1D24E005A5CFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEA3095C1DC1D24E005A5CFB;
+			remoteInfo = CallBlocker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FEA309A31DC1D335005A5CFB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FE2472AA1DC35E630040698A /* CallBlockerIdentification.appex in Embed App Extensions */,
+				FE2A0C421DC35FF20031D5E6 /* CallBlockerBlock.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		05DB75303A3840CF84164E33 /* Pods-CallBlocker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallBlocker.release.xcconfig"; path = "Pods/Target Support Files/Pods-CallBlocker/Pods-CallBlocker.release.xcconfig"; sourceTree = "<group>"; };
+		0F467E19DCCAD9185C2604CA /* Pods-CallDirectory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallDirectory.release.xcconfig"; path = "Pods/Target Support Files/Pods-CallDirectory/Pods-CallDirectory.release.xcconfig"; sourceTree = "<group>"; };
+		35D38DB49EE2F4A728E8B8DF /* Pods-CallDirectory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallDirectory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CallDirectory/Pods-CallDirectory.debug.xcconfig"; sourceTree = "<group>"; };
+		3CC7CC24DEE8DEE13B921895 /* Pods-CallBlocker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallBlocker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CallBlocker/Pods-CallBlocker.debug.xcconfig"; sourceTree = "<group>"; };
+		4A5B5EB0DB508C73CEEEFAA7 /* Pods-CallBlockerBlock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallBlockerBlock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CallBlockerBlock/Pods-CallBlockerBlock.debug.xcconfig"; sourceTree = "<group>"; };
+		4CAE4D172748E1EE6528EEC9 /* Pods-CallBlockerIdentification.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallBlockerIdentification.release.xcconfig"; path = "Pods/Target Support Files/Pods-CallBlockerIdentification/Pods-CallBlockerIdentification.release.xcconfig"; sourceTree = "<group>"; };
+		504003D658E5502E25EBD623 /* libPods-CallDirectory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CallDirectory.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		659A7DE647CAA2C40FAC6797 /* libPods-CallBlockerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CallBlockerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67C323A7971F7635E2A9FD86 /* Pods-CallBlockerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallBlockerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CallBlockerTests/Pods-CallBlockerTests.release.xcconfig"; sourceTree = "<group>"; };
+		694CD272A603B4C495BEE8EB /* Pods-CallBlockerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallBlockerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CallBlockerUITests/Pods-CallBlockerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D66A8077A1ACC3C57516252 /* libPods-CallBlockerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CallBlockerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98834CF2C418DEEB3454DE4D /* libPods-CallBlockerBlock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CallBlockerBlock.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CB5D0E13DA0A0CEC61A3511 /* libPods-CallBlocker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CallBlocker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5AE62EB9F7E21C54DE041AC /* libPods-CallBlockerIdentification.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CallBlockerIdentification.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA559AA2D04C36663996CB29 /* Pods-CallBlockerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallBlockerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CallBlockerTests/Pods-CallBlockerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E9DD91D43CE2BFAF1A379A51 /* Pods-CallBlockerIdentification.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallBlockerIdentification.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CallBlockerIdentification/Pods-CallBlockerIdentification.debug.xcconfig"; sourceTree = "<group>"; };
+		EA7AB4B88102B5625F88D9FD /* Pods-CallBlockerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallBlockerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CallBlockerUITests/Pods-CallBlockerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		ECD8BD8656E0D92399B873FD /* Pods-CallBlockerBlock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallBlockerBlock.release.xcconfig"; path = "Pods/Target Support Files/Pods-CallBlockerBlock/Pods-CallBlockerBlock.release.xcconfig"; sourceTree = "<group>"; };
+		FE0FF0C01DC6DA7A0073D35C /* CBCallDirectoryUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBCallDirectoryUtil.h; sourceTree = "<group>"; };
+		FE0FF0C11DC6DA7A0073D35C /* CBCallDirectoryUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBCallDirectoryUtil.m; sourceTree = "<group>"; };
+		FE0FF0C71DC6EE910073D35C /* CBSettingSwitchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSettingSwitchTableViewCell.h; sourceTree = "<group>"; };
+		FE0FF0C81DC6EE910073D35C /* CBSettingSwitchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBSettingSwitchTableViewCell.m; sourceTree = "<group>"; };
+		FE0FF0D01DC6FDD90073D35C /* CBEditIdentificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBEditIdentificationViewController.h; sourceTree = "<group>"; };
+		FE0FF0D11DC6FDD90073D35C /* CBEditIdentificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBEditIdentificationViewController.m; sourceTree = "<group>"; };
+		FE2472791DC2F1230040698A /* CBIdentificationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBIdentificationService.h; sourceTree = "<group>"; };
+		FE24727A1DC2F1230040698A /* CBIdentificationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBIdentificationService.m; sourceTree = "<group>"; };
+		FE24727D1DC2FC440040698A /* CBIdentification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBIdentification.h; sourceTree = "<group>"; };
+		FE24727E1DC2FC440040698A /* CBIdentification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBIdentification.m; sourceTree = "<group>"; };
+		FE2472811DC328740040698A /* CBIdentificationListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBIdentificationListTableViewCell.h; sourceTree = "<group>"; };
+		FE2472821DC328740040698A /* CBIdentificationListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBIdentificationListTableViewCell.m; sourceTree = "<group>"; };
+		FE2472911DC359DB0040698A /* CBMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMediator.h; sourceTree = "<group>"; };
+		FE2472921DC359DB0040698A /* CBMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMediator.m; sourceTree = "<group>"; };
+		FE2472A21DC35E620040698A /* CallBlockerIdentification.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CallBlockerIdentification.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE2472A41DC35E630040698A /* CallDirectoryHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallDirectoryHandler.h; sourceTree = "<group>"; };
+		FE2472A51DC35E630040698A /* CallDirectoryHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallDirectoryHandler.m; sourceTree = "<group>"; };
+		FE2472A71DC35E630040698A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE2472B11DC35ED30040698A /* CallBlockerIdentification.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CallBlockerIdentification.entitlements; sourceTree = "<group>"; };
+		FE2A0C3A1DC35FF20031D5E6 /* CallBlockerBlock.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CallBlockerBlock.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE2A0C3C1DC35FF20031D5E6 /* CallDirectoryHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallDirectoryHandler.h; sourceTree = "<group>"; };
+		FE2A0C3D1DC35FF20031D5E6 /* CallDirectoryHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallDirectoryHandler.m; sourceTree = "<group>"; };
+		FE2A0C3F1DC35FF20031D5E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE2A0C461DC360560031D5E6 /* CallBlockerBlock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CallBlockerBlock.entitlements; sourceTree = "<group>"; };
+		FE650CB21DC871EC00A44C39 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		FE650CB31DC871EC00A44C39 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		FE6E6F081DC9E2BA0098E67C /* CBBlockService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBBlockService.h; sourceTree = "<group>"; };
+		FE6E6F091DC9E2BA0098E67C /* CBBlockService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBBlockService.m; sourceTree = "<group>"; };
+		FE6E6F0F1DC9E5700098E67C /* CBBlockNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBBlockNumber.h; sourceTree = "<group>"; };
+		FE6E6F101DC9E5700098E67C /* CBBlockNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBBlockNumber.m; sourceTree = "<group>"; };
+		FE6E6F121DC9EADD0098E67C /* CBAddBlockNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBAddBlockNumberViewController.h; sourceTree = "<group>"; };
+		FE6E6F131DC9EADD0098E67C /* CBAddBlockNumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBAddBlockNumberViewController.m; sourceTree = "<group>"; };
+		FEA3095D1DC1D24E005A5CFB /* CallBlocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallBlocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEA309611DC1D24E005A5CFB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FEA309631DC1D24E005A5CFB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FEA309641DC1D24E005A5CFB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FEA3096C1DC1D24E005A5CFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FEA3096F1DC1D24E005A5CFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FEA309711DC1D24E005A5CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEA309761DC1D24E005A5CFB /* CallBlockerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CallBlockerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEA3097A1DC1D24E005A5CFB /* CallBlockerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallBlockerTests.m; sourceTree = "<group>"; };
+		FEA3097C1DC1D24E005A5CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEA309811DC1D24E005A5CFB /* CallBlockerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CallBlockerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEA309851DC1D24E005A5CFB /* CallBlockerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallBlockerUITests.m; sourceTree = "<group>"; };
+		FEA309871DC1D24E005A5CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEA309A71DC1D871005A5CFB /* SingletonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonMacro.h; sourceTree = "<group>"; };
+		FEA309BF1DC1DDFB005A5CFB /* CBMediator+SplashView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBMediator+SplashView.h"; sourceTree = "<group>"; };
+		FEA309C01DC1DDFB005A5CFB /* CBMediator+SplashView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBMediator+SplashView.m"; sourceTree = "<group>"; };
+		FEA309C21DC1EADE005A5CFB /* CBSplashViewControllerTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSplashViewControllerTarget.h; sourceTree = "<group>"; };
+		FEA309C31DC1EADE005A5CFB /* CBSplashViewControllerTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBSplashViewControllerTarget.m; sourceTree = "<group>"; };
+		FEA309C61DC1ED2F005A5CFB /* CBMediator+MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBMediator+MainView.h"; sourceTree = "<group>"; };
+		FEA309C71DC1ED2F005A5CFB /* CBMediator+MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBMediator+MainView.m"; sourceTree = "<group>"; };
+		FEA309C91DC1ED97005A5CFB /* CBMainViewControllerTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMainViewControllerTarget.h; sourceTree = "<group>"; };
+		FEA309CA1DC1ED97005A5CFB /* CBMainViewControllerTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMainViewControllerTarget.m; sourceTree = "<group>"; };
+		FEA309D21DC1EF53005A5CFB /* CBTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBTabBarController.h; sourceTree = "<group>"; };
+		FEA309D31DC1EF53005A5CFB /* CBTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBTabBarController.m; sourceTree = "<group>"; };
+		FEA309D51DC1EF53005A5CFB /* CBSplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSplashViewController.h; sourceTree = "<group>"; };
+		FEA309D61DC1EF53005A5CFB /* CBSplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBSplashViewController.m; sourceTree = "<group>"; };
+		FEA309D91DC1EFD4005A5CFB /* CBNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBNavigationController.h; sourceTree = "<group>"; };
+		FEA309DA1DC1EFD4005A5CFB /* CBNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBNavigationController.m; sourceTree = "<group>"; };
+		FEA309EB1DC1F208005A5CFB /* CBBlockListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBBlockListTableViewController.h; sourceTree = "<group>"; };
+		FEA309EC1DC1F208005A5CFB /* CBBlockListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBBlockListTableViewController.m; sourceTree = "<group>"; };
+		FEA309EE1DC1F21A005A5CFB /* CBContactListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBContactListTableViewController.h; sourceTree = "<group>"; };
+		FEA309EF1DC1F21A005A5CFB /* CBContactListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBContactListTableViewController.m; sourceTree = "<group>"; };
+		FEA309F11DC1F226005A5CFB /* CBIdentificationListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBIdentificationListTableViewController.h; sourceTree = "<group>"; };
+		FEA309F21DC1F226005A5CFB /* CBIdentificationListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBIdentificationListTableViewController.m; sourceTree = "<group>"; };
+		FEA309F51DC1F26F005A5CFB /* CBSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSettingTableViewController.h; sourceTree = "<group>"; };
+		FEA309F61DC1F26F005A5CFB /* CBSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBSettingTableViewController.m; sourceTree = "<group>"; };
+		FEA309F81DC206EF005A5CFB /* CallBlocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CallBlocker.entitlements; sourceTree = "<group>"; };
+		FEF2A3151DC208E400310913 /* CBStoreHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBStoreHelper.h; sourceTree = "<group>"; };
+		FEF2A3161DC208E400310913 /* CBStoreHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBStoreHelper.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE24729F1DC35E620040698A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54649060DA726CE5DEEA6131 /* libPods-CallBlockerIdentification.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE2A0C371DC35FF20031D5E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B7411DA6BF28E0D7AC5EDDF /* libPods-CallBlockerBlock.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEA3095A1DC1D24E005A5CFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB3EFB7C0C706AEBA861D177 /* libPods-CallBlocker.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEA309731DC1D24E005A5CFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6733CACCB0B86D9635CE495F /* libPods-CallBlockerTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEA3097E1DC1D24E005A5CFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D6B352A55D332EF915DAA33 /* libPods-CallBlockerUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7484F346FAB7FA7A33132C4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CC7CC24DEE8DEE13B921895 /* Pods-CallBlocker.debug.xcconfig */,
+				05DB75303A3840CF84164E33 /* Pods-CallBlocker.release.xcconfig */,
+				CA559AA2D04C36663996CB29 /* Pods-CallBlockerTests.debug.xcconfig */,
+				67C323A7971F7635E2A9FD86 /* Pods-CallBlockerTests.release.xcconfig */,
+				694CD272A603B4C495BEE8EB /* Pods-CallBlockerUITests.debug.xcconfig */,
+				EA7AB4B88102B5625F88D9FD /* Pods-CallBlockerUITests.release.xcconfig */,
+				35D38DB49EE2F4A728E8B8DF /* Pods-CallDirectory.debug.xcconfig */,
+				0F467E19DCCAD9185C2604CA /* Pods-CallDirectory.release.xcconfig */,
+				4A5B5EB0DB508C73CEEEFAA7 /* Pods-CallBlockerBlock.debug.xcconfig */,
+				ECD8BD8656E0D92399B873FD /* Pods-CallBlockerBlock.release.xcconfig */,
+				E9DD91D43CE2BFAF1A379A51 /* Pods-CallBlockerIdentification.debug.xcconfig */,
+				4CAE4D172748E1EE6528EEC9 /* Pods-CallBlockerIdentification.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA9F5731882640902B4D65A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CB5D0E13DA0A0CEC61A3511 /* libPods-CallBlocker.a */,
+				659A7DE647CAA2C40FAC6797 /* libPods-CallBlockerTests.a */,
+				6D66A8077A1ACC3C57516252 /* libPods-CallBlockerUITests.a */,
+				504003D658E5502E25EBD623 /* libPods-CallDirectory.a */,
+				98834CF2C418DEEB3454DE4D /* libPods-CallBlockerBlock.a */,
+				A5AE62EB9F7E21C54DE041AC /* libPods-CallBlockerIdentification.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE0FF0BF1DC6DA610073D35C /* CallDirectory */ = {
+			isa = PBXGroup;
+			children = (
+				FE0FF0C01DC6DA7A0073D35C /* CBCallDirectoryUtil.h */,
+				FE0FF0C11DC6DA7A0073D35C /* CBCallDirectoryUtil.m */,
+			);
+			path = CallDirectory;
+			sourceTree = "<group>";
+		};
+		FE0FF0C31DC6E9690073D35C /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				FE0FF0C71DC6EE910073D35C /* CBSettingSwitchTableViewCell.h */,
+				FE0FF0C81DC6EE910073D35C /* CBSettingSwitchTableViewCell.m */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		FE2472781DC2F0FB0040698A /* Identification */ = {
+			isa = PBXGroup;
+			children = (
+				FE2472791DC2F1230040698A /* CBIdentificationService.h */,
+				FE24727A1DC2F1230040698A /* CBIdentificationService.m */,
+			);
+			path = Identification;
+			sourceTree = "<group>";
+		};
+		FE24727C1DC2FC370040698A /* Identification */ = {
+			isa = PBXGroup;
+			children = (
+				FE24727D1DC2FC440040698A /* CBIdentification.h */,
+				FE24727E1DC2FC440040698A /* CBIdentification.m */,
+			);
+			path = Identification;
+			sourceTree = "<group>";
+		};
+		FE2472801DC328560040698A /* Identification */ = {
+			isa = PBXGroup;
+			children = (
+				FE2472811DC328740040698A /* CBIdentificationListTableViewCell.h */,
+				FE2472821DC328740040698A /* CBIdentificationListTableViewCell.m */,
+			);
+			path = Identification;
+			sourceTree = "<group>";
+		};
+		FE2472901DC359DB0040698A /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				FE2472911DC359DB0040698A /* CBMediator.h */,
+				FE2472921DC359DB0040698A /* CBMediator.m */,
+			);
+			path = Mediator;
+			sourceTree = "<group>";
+		};
+		FE2472A31DC35E630040698A /* CallBlockerIdentification */ = {
+			isa = PBXGroup;
+			children = (
+				FE2472B11DC35ED30040698A /* CallBlockerIdentification.entitlements */,
+				FE2472A41DC35E630040698A /* CallDirectoryHandler.h */,
+				FE2472A51DC35E630040698A /* CallDirectoryHandler.m */,
+				FE2472A71DC35E630040698A /* Info.plist */,
+			);
+			path = CallBlockerIdentification;
+			sourceTree = "<group>";
+		};
+		FE2A0C3B1DC35FF20031D5E6 /* CallBlockerBlock */ = {
+			isa = PBXGroup;
+			children = (
+				FE2A0C461DC360560031D5E6 /* CallBlockerBlock.entitlements */,
+				FE2A0C3C1DC35FF20031D5E6 /* CallDirectoryHandler.h */,
+				FE2A0C3D1DC35FF20031D5E6 /* CallDirectoryHandler.m */,
+				FE2A0C3F1DC35FF20031D5E6 /* Info.plist */,
+			);
+			path = CallBlockerBlock;
+			sourceTree = "<group>";
+		};
+		FE650CB11DC871D300A44C39 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				FE650CB21DC871EC00A44C39 /* UIColor+Hex.h */,
+				FE650CB31DC871EC00A44C39 /* UIColor+Hex.m */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		FE6E6F071DC9E2A10098E67C /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				FE6E6F081DC9E2BA0098E67C /* CBBlockService.h */,
+				FE6E6F091DC9E2BA0098E67C /* CBBlockService.m */,
+			);
+			path = Block;
+			sourceTree = "<group>";
+		};
+		FE6E6F0B1DC9E4C50098E67C /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				FE6E6F0F1DC9E5700098E67C /* CBBlockNumber.h */,
+				FE6E6F101DC9E5700098E67C /* CBBlockNumber.m */,
+			);
+			path = Block;
+			sourceTree = "<group>";
+		};
+		FEA309541DC1D24E005A5CFB = {
+			isa = PBXGroup;
+			children = (
+				FEA3095F1DC1D24E005A5CFB /* CallBlocker */,
+				FEA309791DC1D24E005A5CFB /* CallBlockerTests */,
+				FEA309841DC1D24E005A5CFB /* CallBlockerUITests */,
+				FE2472A31DC35E630040698A /* CallBlockerIdentification */,
+				FE2A0C3B1DC35FF20031D5E6 /* CallBlockerBlock */,
+				FEA3095E1DC1D24E005A5CFB /* Products */,
+				7484F346FAB7FA7A33132C4B /* Pods */,
+				FA9F5731882640902B4D65A0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FEA3095E1DC1D24E005A5CFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEA3095D1DC1D24E005A5CFB /* CallBlocker.app */,
+				FEA309761DC1D24E005A5CFB /* CallBlockerTests.xctest */,
+				FEA309811DC1D24E005A5CFB /* CallBlockerUITests.xctest */,
+				FE2472A21DC35E620040698A /* CallBlockerIdentification.appex */,
+				FE2A0C3A1DC35FF20031D5E6 /* CallBlockerBlock.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEA3095F1DC1D24E005A5CFB /* CallBlocker */ = {
+			isa = PBXGroup;
+			children = (
+				FEA309F81DC206EF005A5CFB /* CallBlocker.entitlements */,
+				FEA309D01DC1EF53005A5CFB /* ViewControllers */,
+				FEA309BC1DC1DDE3005A5CFB /* Categories */,
+				FEA309B71DC1DD3B005A5CFB /* Utils */,
+				FEA309A51DC1D871005A5CFB /* Helpers */,
+				FEA309A61DC1D871005A5CFB /* Macros */,
+				FEA309A81DC1D871005A5CFB /* Models */,
+				FEA309A91DC1D871005A5CFB /* Services */,
+				FEA309AA1DC1D871005A5CFB /* Views */,
+				FEA309631DC1D24E005A5CFB /* AppDelegate.h */,
+				FEA309641DC1D24E005A5CFB /* AppDelegate.m */,
+				FEA3096C1DC1D24E005A5CFB /* Assets.xcassets */,
+				FEA3096E1DC1D24E005A5CFB /* LaunchScreen.storyboard */,
+				FEA309711DC1D24E005A5CFB /* Info.plist */,
+				FEA309601DC1D24E005A5CFB /* Supporting Files */,
+			);
+			path = CallBlocker;
+			sourceTree = "<group>";
+		};
+		FEA309601DC1D24E005A5CFB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEA309611DC1D24E005A5CFB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEA309791DC1D24E005A5CFB /* CallBlockerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FEA3097A1DC1D24E005A5CFB /* CallBlockerTests.m */,
+				FEA3097C1DC1D24E005A5CFB /* Info.plist */,
+			);
+			path = CallBlockerTests;
+			sourceTree = "<group>";
+		};
+		FEA309841DC1D24E005A5CFB /* CallBlockerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FEA309851DC1D24E005A5CFB /* CallBlockerUITests.m */,
+				FEA309871DC1D24E005A5CFB /* Info.plist */,
+			);
+			path = CallBlockerUITests;
+			sourceTree = "<group>";
+		};
+		FEA309A51DC1D871005A5CFB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FE2472901DC359DB0040698A /* Mediator */,
+				FEF2A3141DC2088D00310913 /* Store */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FEA309A61DC1D871005A5CFB /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				FEA309A71DC1D871005A5CFB /* SingletonMacro.h */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		FEA309A81DC1D871005A5CFB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FE6E6F0B1DC9E4C50098E67C /* Block */,
+				FE24727C1DC2FC370040698A /* Identification */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FEA309A91DC1D871005A5CFB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FE6E6F071DC9E2A10098E67C /* Block */,
+				FE2472781DC2F0FB0040698A /* Identification */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FEA309AA1DC1D871005A5CFB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FE0FF0C31DC6E9690073D35C /* Setting */,
+				FE2472801DC328560040698A /* Identification */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FEA309B71DC1DD3B005A5CFB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FE0FF0BF1DC6DA610073D35C /* CallDirectory */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FEA309BC1DC1DDE3005A5CFB /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				FE650CB11DC871D300A44C39 /* General */,
+				FEA309BD1DC1DDE3005A5CFB /* Mediator */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		FEA309BD1DC1DDE3005A5CFB /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				FEA309C51DC1EC7F005A5CFB /* MainView */,
+				FEA309BE1DC1DDE3005A5CFB /* SplashView */,
+			);
+			path = Mediator;
+			sourceTree = "<group>";
+		};
+		FEA309BE1DC1DDE3005A5CFB /* SplashView */ = {
+			isa = PBXGroup;
+			children = (
+				FEA309BF1DC1DDFB005A5CFB /* CBMediator+SplashView.h */,
+				FEA309C01DC1DDFB005A5CFB /* CBMediator+SplashView.m */,
+				FEA309C21DC1EADE005A5CFB /* CBSplashViewControllerTarget.h */,
+				FEA309C31DC1EADE005A5CFB /* CBSplashViewControllerTarget.m */,
+			);
+			path = SplashView;
+			sourceTree = "<group>";
+		};
+		FEA309C51DC1EC7F005A5CFB /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				FEA309C61DC1ED2F005A5CFB /* CBMediator+MainView.h */,
+				FEA309C71DC1ED2F005A5CFB /* CBMediator+MainView.m */,
+				FEA309C91DC1ED97005A5CFB /* CBMainViewControllerTarget.h */,
+				FEA309CA1DC1ED97005A5CFB /* CBMainViewControllerTarget.m */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		FEA309D01DC1EF53005A5CFB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FEA309F41DC1F260005A5CFB /* Setting */,
+				FEA309DC1DC1F11C005A5CFB /* Block */,
+				FEA309DD1DC1F11C005A5CFB /* Contact */,
+				FEA309DE1DC1F11C005A5CFB /* Identification */,
+				FEA309D11DC1EF53005A5CFB /* General */,
+				FEA309D41DC1EF53005A5CFB /* SplashView */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FEA309D11DC1EF53005A5CFB /* General */ = {
+			isa = PBXGroup;
+			children = (
+				FEA309D21DC1EF53005A5CFB /* CBTabBarController.h */,
+				FEA309D31DC1EF53005A5CFB /* CBTabBarController.m */,
+				FEA309D91DC1EFD4005A5CFB /* CBNavigationController.h */,
+				FEA309DA1DC1EFD4005A5CFB /* CBNavigationController.m */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		FEA309D41DC1EF53005A5CFB /* SplashView */ = {
+			isa = PBXGroup;
+			children = (
+				FEA309D51DC1EF53005A5CFB /* CBSplashViewController.h */,
+				FEA309D61DC1EF53005A5CFB /* CBSplashViewController.m */,
+			);
+			path = SplashView;
+			sourceTree = "<group>";
+		};
+		FEA309DC1DC1F11C005A5CFB /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				FEA309EB1DC1F208005A5CFB /* CBBlockListTableViewController.h */,
+				FEA309EC1DC1F208005A5CFB /* CBBlockListTableViewController.m */,
+				FE6E6F121DC9EADD0098E67C /* CBAddBlockNumberViewController.h */,
+				FE6E6F131DC9EADD0098E67C /* CBAddBlockNumberViewController.m */,
+			);
+			path = Block;
+			sourceTree = "<group>";
+		};
+		FEA309DD1DC1F11C005A5CFB /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				FEA309EE1DC1F21A005A5CFB /* CBContactListTableViewController.h */,
+				FEA309EF1DC1F21A005A5CFB /* CBContactListTableViewController.m */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		FEA309DE1DC1F11C005A5CFB /* Identification */ = {
+			isa = PBXGroup;
+			children = (
+				FEA309F11DC1F226005A5CFB /* CBIdentificationListTableViewController.h */,
+				FEA309F21DC1F226005A5CFB /* CBIdentificationListTableViewController.m */,
+				FE0FF0D01DC6FDD90073D35C /* CBEditIdentificationViewController.h */,
+				FE0FF0D11DC6FDD90073D35C /* CBEditIdentificationViewController.m */,
+			);
+			path = Identification;
+			sourceTree = "<group>";
+		};
+		FEA309F41DC1F260005A5CFB /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				FEA309F51DC1F26F005A5CFB /* CBSettingTableViewController.h */,
+				FEA309F61DC1F26F005A5CFB /* CBSettingTableViewController.m */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		FEF2A3141DC2088D00310913 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				FEF2A3151DC208E400310913 /* CBStoreHelper.h */,
+				FEF2A3161DC208E400310913 /* CBStoreHelper.m */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE2472A11DC35E620040698A /* CallBlockerIdentification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE2472AB1DC35E630040698A /* Build configuration list for PBXNativeTarget "CallBlockerIdentification" */;
+			buildPhases = (
+				D886E74735B34F5A7A983263 /* [CP] Check Pods Manifest.lock */,
+				FE24729E1DC35E620040698A /* Sources */,
+				FE24729F1DC35E620040698A /* Frameworks */,
+				FE2472A01DC35E620040698A /* Resources */,
+				2B8AEF1E95F5BF2FC7494034 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CallBlockerIdentification;
+			productName = CallBlockerIdentification;
+			productReference = FE2472A21DC35E620040698A /* CallBlockerIdentification.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		FE2A0C391DC35FF20031D5E6 /* CallBlockerBlock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE2A0C431DC35FF20031D5E6 /* Build configuration list for PBXNativeTarget "CallBlockerBlock" */;
+			buildPhases = (
+				9122877592A909CB8239F76B /* [CP] Check Pods Manifest.lock */,
+				FE2A0C361DC35FF20031D5E6 /* Sources */,
+				FE2A0C371DC35FF20031D5E6 /* Frameworks */,
+				FE2A0C381DC35FF20031D5E6 /* Resources */,
+				59EA79714CD9BDAC4F1ABCA1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CallBlockerBlock;
+			productName = CallBlockerBlock;
+			productReference = FE2A0C3A1DC35FF20031D5E6 /* CallBlockerBlock.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		FEA3095C1DC1D24E005A5CFB /* CallBlocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEA3098A1DC1D24E005A5CFB /* Build configuration list for PBXNativeTarget "CallBlocker" */;
+			buildPhases = (
+				DAE244389F050A5DA3CE71CA /* [CP] Check Pods Manifest.lock */,
+				FEA309591DC1D24E005A5CFB /* Sources */,
+				FEA3095A1DC1D24E005A5CFB /* Frameworks */,
+				FEA3095B1DC1D24E005A5CFB /* Resources */,
+				FEA309A31DC1D335005A5CFB /* Embed App Extensions */,
+				A37EC8EAF13E825789C74D97 /* [CP] Embed Pods Frameworks */,
+				C7864F4E0EE85A850D965ADC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE2472A91DC35E630040698A /* PBXTargetDependency */,
+				FE2A0C411DC35FF20031D5E6 /* PBXTargetDependency */,
+			);
+			name = CallBlocker;
+			productName = CallBlocker;
+			productReference = FEA3095D1DC1D24E005A5CFB /* CallBlocker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FEA309751DC1D24E005A5CFB /* CallBlockerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEA3098D1DC1D24E005A5CFB /* Build configuration list for PBXNativeTarget "CallBlockerTests" */;
+			buildPhases = (
+				DE51F037EA257F9C7CFCCF89 /* [CP] Check Pods Manifest.lock */,
+				FEA309721DC1D24E005A5CFB /* Sources */,
+				FEA309731DC1D24E005A5CFB /* Frameworks */,
+				FEA309741DC1D24E005A5CFB /* Resources */,
+				15B3B7D978093C6F3B138F09 /* [CP] Embed Pods Frameworks */,
+				FA2A861303B7F602349940DF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEA309781DC1D24E005A5CFB /* PBXTargetDependency */,
+			);
+			name = CallBlockerTests;
+			productName = CallBlockerTests;
+			productReference = FEA309761DC1D24E005A5CFB /* CallBlockerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FEA309801DC1D24E005A5CFB /* CallBlockerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEA309901DC1D24E005A5CFB /* Build configuration list for PBXNativeTarget "CallBlockerUITests" */;
+			buildPhases = (
+				8FB0AA6A581939DD74E55B68 /* [CP] Check Pods Manifest.lock */,
+				FEA3097D1DC1D24E005A5CFB /* Sources */,
+				FEA3097E1DC1D24E005A5CFB /* Frameworks */,
+				FEA3097F1DC1D24E005A5CFB /* Resources */,
+				F4D3FC202415BA8473342D25 /* [CP] Embed Pods Frameworks */,
+				D390DC4C2D634652DCB501D0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEA309831DC1D24E005A5CFB /* PBXTargetDependency */,
+			);
+			name = CallBlockerUITests;
+			productName = CallBlockerUITests;
+			productReference = FEA309811DC1D24E005A5CFB /* CallBlockerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEA309551DC1D24E005A5CFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Aalen;
+				TargetAttributes = {
+					FE2472A11DC35E620040698A = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					FE2A0C391DC35FF20031D5E6 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					FEA3095C1DC1D24E005A5CFB = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
+					};
+					FEA309751DC1D24E005A5CFB = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FEA3095C1DC1D24E005A5CFB;
+					};
+					FEA309801DC1D24E005A5CFB = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FEA3095C1DC1D24E005A5CFB;
+					};
+				};
+			};
+			buildConfigurationList = FEA309581DC1D24E005A5CFB /* Build configuration list for PBXProject "CallBlocker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FEA309541DC1D24E005A5CFB;
+			productRefGroup = FEA3095E1DC1D24E005A5CFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEA3095C1DC1D24E005A5CFB /* CallBlocker */,
+				FE2472A11DC35E620040698A /* CallBlockerIdentification */,
+				FE2A0C391DC35FF20031D5E6 /* CallBlockerBlock */,
+				FEA309751DC1D24E005A5CFB /* CallBlockerTests */,
+				FEA309801DC1D24E005A5CFB /* CallBlockerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE2472A01DC35E620040698A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE2A0C381DC35FF20031D5E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEA3095B1DC1D24E005A5CFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEA309701DC1D24E005A5CFB /* LaunchScreen.storyboard in Resources */,
+				FEA3096D1DC1D24E005A5CFB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEA309741DC1D24E005A5CFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEA3097F1DC1D24E005A5CFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15B3B7D978093C6F3B138F09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CallBlockerTests/Pods-CallBlockerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B8AEF1E95F5BF2FC7494034 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CallBlockerIdentification/Pods-CallBlockerIdentification-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59EA79714CD9BDAC4F1ABCA1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CallBlockerBlock/Pods-CallBlockerBlock-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FB0AA6A581939DD74E55B68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9122877592A909CB8239F76B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A37EC8EAF13E825789C74D97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CallBlocker/Pods-CallBlocker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7864F4E0EE85A850D965ADC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CallBlocker/Pods-CallBlocker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D390DC4C2D634652DCB501D0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CallBlockerUITests/Pods-CallBlockerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D886E74735B34F5A7A983263 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DAE244389F050A5DA3CE71CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DE51F037EA257F9C7CFCCF89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F4D3FC202415BA8473342D25 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CallBlockerUITests/Pods-CallBlockerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA2A861303B7F602349940DF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CallBlockerTests/Pods-CallBlockerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE24729E1DC35E620040698A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE650CB51DC89DFD00A44C39 /* CBCallDirectoryUtil.m in Sources */,
+				FE2472AE1DC35E840040698A /* CBStoreHelper.m in Sources */,
+				FE2472AF1DC35E840040698A /* CBIdentification.m in Sources */,
+				FE2472B01DC35E840040698A /* CBIdentificationService.m in Sources */,
+				FE2472A61DC35E630040698A /* CallDirectoryHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE2A0C361DC35FF20031D5E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE6E6F151DC9ED530098E67C /* CBBlockNumber.m in Sources */,
+				FE6E6F161DC9ED530098E67C /* CBBlockService.m in Sources */,
+				FE650CB61DC89E0A00A44C39 /* CBCallDirectoryUtil.m in Sources */,
+				FE77F0741DC36192003DC278 /* CBStoreHelper.m in Sources */,
+				FE2A0C3E1DC35FF20031D5E6 /* CallDirectoryHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEA309591DC1D24E005A5CFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEA309DB1DC1EFD4005A5CFB /* CBNavigationController.m in Sources */,
+				FE0FF0D21DC6FDD90073D35C /* CBEditIdentificationViewController.m in Sources */,
+				FE0FF0C21DC6DA7A0073D35C /* CBCallDirectoryUtil.m in Sources */,
+				FE6E6F0A1DC9E2BA0098E67C /* CBBlockService.m in Sources */,
+				FE24727F1DC2FC440040698A /* CBIdentification.m in Sources */,
+				FE0FF0C91DC6EE910073D35C /* CBSettingSwitchTableViewCell.m in Sources */,
+				FEA309F71DC1F26F005A5CFB /* CBSettingTableViewController.m in Sources */,
+				FEA309C11DC1DDFB005A5CFB /* CBMediator+SplashView.m in Sources */,
+				FEA309C41DC1EADE005A5CFB /* CBSplashViewControllerTarget.m in Sources */,
+				FE24727B1DC2F1230040698A /* CBIdentificationService.m in Sources */,
+				FEF2A3171DC208E400310913 /* CBStoreHelper.m in Sources */,
+				FEA309C81DC1ED2F005A5CFB /* CBMediator+MainView.m in Sources */,
+				FE6E6F111DC9E5700098E67C /* CBBlockNumber.m in Sources */,
+				FE2472831DC328740040698A /* CBIdentificationListTableViewCell.m in Sources */,
+				FEA309651DC1D24E005A5CFB /* AppDelegate.m in Sources */,
+				FEA309D81DC1EF53005A5CFB /* CBSplashViewController.m in Sources */,
+				FE2472931DC359DB0040698A /* CBMediator.m in Sources */,
+				FEA309F31DC1F226005A5CFB /* CBIdentificationListTableViewController.m in Sources */,
+				FEA309D71DC1EF53005A5CFB /* CBTabBarController.m in Sources */,
+				FEA309621DC1D24E005A5CFB /* main.m in Sources */,
+				FEA309F01DC1F21A005A5CFB /* CBContactListTableViewController.m in Sources */,
+				FE650CB41DC871EC00A44C39 /* UIColor+Hex.m in Sources */,
+				FE6E6F141DC9EADD0098E67C /* CBAddBlockNumberViewController.m in Sources */,
+				FEA309ED1DC1F208005A5CFB /* CBBlockListTableViewController.m in Sources */,
+				FEA309CB1DC1ED97005A5CFB /* CBMainViewControllerTarget.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEA309721DC1D24E005A5CFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEA3097B1DC1D24E005A5CFB /* CallBlockerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEA3097D1DC1D24E005A5CFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEA309861DC1D24E005A5CFB /* CallBlockerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE2472A91DC35E630040698A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE2472A11DC35E620040698A /* CallBlockerIdentification */;
+			targetProxy = FE2472A81DC35E630040698A /* PBXContainerItemProxy */;
+		};
+		FE2A0C411DC35FF20031D5E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE2A0C391DC35FF20031D5E6 /* CallBlockerBlock */;
+			targetProxy = FE2A0C401DC35FF20031D5E6 /* PBXContainerItemProxy */;
+		};
+		FEA309781DC1D24E005A5CFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEA3095C1DC1D24E005A5CFB /* CallBlocker */;
+			targetProxy = FEA309771DC1D24E005A5CFB /* PBXContainerItemProxy */;
+		};
+		FEA309831DC1D24E005A5CFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEA3095C1DC1D24E005A5CFB /* CallBlocker */;
+			targetProxy = FEA309821DC1D24E005A5CFB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FEA3096E1DC1D24E005A5CFB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEA3096F1DC1D24E005A5CFB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE2472AC1DC35E630040698A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9DD91D43CE2BFAF1A379A51 /* Pods-CallBlockerIdentification.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = CallBlockerIdentification/CallBlockerIdentification.entitlements;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = CallBlockerIdentification/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.callblocker.identification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FE2472AD1DC35E630040698A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CAE4D172748E1EE6528EEC9 /* Pods-CallBlockerIdentification.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = CallBlockerIdentification/CallBlockerIdentification.entitlements;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = CallBlockerIdentification/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.callblocker.identification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FE2A0C441DC35FF20031D5E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A5B5EB0DB508C73CEEEFAA7 /* Pods-CallBlockerBlock.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = CallBlockerBlock/CallBlockerBlock.entitlements;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = CallBlockerBlock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.callblocker.block;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FE2A0C451DC35FF20031D5E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECD8BD8656E0D92399B873FD /* Pods-CallBlockerBlock.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = CallBlockerBlock/CallBlockerBlock.entitlements;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = CallBlockerBlock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.callblocker.block;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FEA309881DC1D24E005A5CFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FEA309891DC1D24E005A5CFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEA3098B1DC1D24E005A5CFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CC7CC24DEE8DEE13B921895 /* Pods-CallBlocker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CallBlocker/CallBlocker.entitlements;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = CallBlocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.callblocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FEA3098C1DC1D24E005A5CFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05DB75303A3840CF84164E33 /* Pods-CallBlocker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CallBlocker/CallBlocker.entitlements;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = CallBlocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.callblocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FEA3098E1DC1D24E005A5CFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA559AA2D04C36663996CB29 /* Pods-CallBlockerTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CallBlockerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aalen.CallBlockerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CallBlocker.app/CallBlocker";
+			};
+			name = Debug;
+		};
+		FEA3098F1DC1D24E005A5CFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67C323A7971F7635E2A9FD86 /* Pods-CallBlockerTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CallBlockerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aalen.CallBlockerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CallBlocker.app/CallBlocker";
+			};
+			name = Release;
+		};
+		FEA309911DC1D24E005A5CFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 694CD272A603B4C495BEE8EB /* Pods-CallBlockerUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = CallBlockerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aalen.CallBlockerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CallBlocker;
+			};
+			name = Debug;
+		};
+		FEA309921DC1D24E005A5CFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA7AB4B88102B5625F88D9FD /* Pods-CallBlockerUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = CallBlockerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aalen.CallBlockerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CallBlocker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE2472AB1DC35E630040698A /* Build configuration list for PBXNativeTarget "CallBlockerIdentification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE2472AC1DC35E630040698A /* Debug */,
+				FE2472AD1DC35E630040698A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE2A0C431DC35FF20031D5E6 /* Build configuration list for PBXNativeTarget "CallBlockerBlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE2A0C441DC35FF20031D5E6 /* Debug */,
+				FE2A0C451DC35FF20031D5E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEA309581DC1D24E005A5CFB /* Build configuration list for PBXProject "CallBlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEA309881DC1D24E005A5CFB /* Debug */,
+				FEA309891DC1D24E005A5CFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEA3098A1DC1D24E005A5CFB /* Build configuration list for PBXNativeTarget "CallBlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEA3098B1DC1D24E005A5CFB /* Debug */,
+				FEA3098C1DC1D24E005A5CFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEA3098D1DC1D24E005A5CFB /* Build configuration list for PBXNativeTarget "CallBlockerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEA3098E1DC1D24E005A5CFB /* Debug */,
+				FEA3098F1DC1D24E005A5CFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEA309901DC1D24E005A5CFB /* Build configuration list for PBXNativeTarget "CallBlockerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEA309911DC1D24E005A5CFB /* Debug */,
+				FEA309921DC1D24E005A5CFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEA309551DC1D24E005A5CFB /* Project object */;
+}
